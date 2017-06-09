@@ -75,12 +75,12 @@ def write_csv(stock_id,directory,filename,smt) :
 
 # In[14]:
 
-#判斷路徑，如果路徑不存在則建立路徑
+#create a directory in the current one doesn't exist
 def makedirs (year, month, stock_id):
     sid = str(stock_id)
     yy      = str(year)
     mm       = str(month)
     directory = 'D:/stock'+'/'+sid +'/'+ yy
     if not os.path.isdir(directory):
-        os.makedirs (directory)  # os.makedirs 可以一次建立好幾層資料夾
+        os.makedirs (directory)  # os.makedirs able to create multi folders
 
